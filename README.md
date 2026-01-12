@@ -80,4 +80,4 @@ Activation Checkpointing: 开启梯度检查点，用计算换显存。
 Batch Size: 配合 gradient_accumulation_steps，保证单卡 Batch Size 为 1 或 2 即可。
 总结下一步建议
 这个方案完全符合学术伦理中的**"Vulnerability Disclosure" (漏洞披露)**。你实际上是在指出当前开源社区普遍使用的 DPO 训练范式（即 ref=policy 且不做严格的参考模型审查）存在安全隐患。
-如果你准备好了，我可以为你生成 Phase 1 (硬化与注入) 的具体 PyTorch/TRL 代码配置脚本。 我们可以先从构建那个关键的 D_inject 数据集格式开始。我想要完整实现前面这个功能，但是项目实现不了，你看看如何修改代码完整实现这个功能呢。前面这个idea到底是要实现一个什么，请用一段话总结一下
+如果你准备好了，我可以为你生成 Phase 1 (硬化与注入) 的具体 PyTorch/TRL 代码配置脚本。
